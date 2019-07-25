@@ -1,0 +1,1388 @@
+﻿
+&map[bootstrap.servers:x.x.x.x:9092,y,y.y.y:9092 broker.address.family:v4 group.id:My-group3 session.timeout.ms:6000 enable.auto.commit:false auto.offset.reset:earliest debug:all]%7|1564074177.292|MEMBERID|rdkafka#consumer-1| [thrd:app]: Group "My-group3": updating member id "(not-set)" -> ""
+%7|1564074177.292|WAKEUPFD|rdkafka#consumer-1| [thrd:app]: GroupCoordinator: Enabled low-latency ops queue wake-ups
+%7|1564074177.292|BROKER|rdkafka#consumer-1| [thrd:app]: GroupCoordinator: Added new broker with NodeId -1
+%7|1564074177.292|BRKMAIN|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Enter main broker thread
+%7|1564074177.292|BRKMAIN|rdkafka#consumer-1| [thrd::0/internal]: :0/internal: Enter main broker thread
+%7|1564074177.292|WAKEUPFD|rdkafka#consumer-1| [thrd:app]: x.x.x.x:9092/bootstrap: Enabled low-latency ops queue wake-ups
+%7|1564074177.292|BROKER|rdkafka#consumer-1| [thrd:app]: x.x.x.x:9092/bootstrap: Added new broker with NodeId -1
+%7|1564074177.292|WAKEUPFD|rdkafka#consumer-1| [thrd:app]: y,y.y.y:9092/bootstrap: Enabled low-latency ops queue wake-ups
+%7|1564074177.292|BRKMAIN|rdkafka#consumer-1| [thrd:x.x.x.x:9092/bootstrap]: x.x.x.x:9092/bootstrap: Enter main broker thread
+%7|1564074177.292|BROKER|rdkafka#consumer-1| [thrd:app]: y,y.y.y:9092/bootstrap: Added new broker with NodeId -1
+%7|1564074177.292|BRKMAIN|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enter main broker thread
+%7|1564074177.292|INIT|rdkafka#consumer-1| [thrd:app]: librdkafka v1.1.0 (0x10100ff) rdkafka#consumer-1 initialized (builtin.features gzip,snappy,ssl,sasl,regex,lz4,sasl_gssapi,sasl_plain,sasl_scram,plugins,sasl_oauthbearer, GCC GXX PKGCONFIG INSTALL GNULD LDS LIBDL PLUGINS ZLIB SSL SASL_CYRUS HDRHISTOGRAM SNAPPY SOCKEM SASL_SCRAM SASL_OAUTHBEARER CRC32C_HW, debug 0xffff)
+{"log_level": "INFO", "log_timestamp": "2019-07-25 22:32:57.292690546 +0530 IST m=+0.096892465", "log_facility": "My Consumer","log_message": "Created Consumer rdkafka#consumer-1\n"}
+%7|1564074177.294|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op SUBSCRIBE (v0) in state init (join state init, v1 vs 0)
+%7|1564074177.294|SUBSCRIBE|rdkafka#consumer-1| [thrd:main]: Group "My-group3": subscribe to new subscription of 2 topics (join state init)
+%7|1564074177.294|UNSUBSCRIBE|rdkafka#consumer-1| [thrd:main]: Group "My-group3": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+%7|1564074177.294|GRPLEADER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": resetting group leader info: unsubscribe
+%7|1564074177.294|REBALANCE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" is rebalancing in state init (join-state init) without assignment: unsubscribe
+%7|1564074177.294|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state init -> wait-unassign (v1, state init)
+%7|1564074177.294|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": unassign done in state init (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1564074177.294|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-unassign -> init (v1, state init)
+%7|1564074177.294|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed state init -> query-coord (v1, join-state init)
+%7|1564074177.294|BROADCAST|rdkafka#consumer-1| [thrd:main]: Broadcasting state change
+%7|1564074177.294|CONNECT|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 0 connection attempt(s))
+%7|1564074177.294|CGRPQUERY|rdkafka#consumer-1| [thrd:main]: Group "My-group3": no broker available for coordinator query: intervaled in state query-coord
+%7|1564074177.294|CONNECT|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received CONNECT op
+%7|1564074177.294|STATE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+%7|1564074177.294|BROADCAST|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: Broadcasting state change
+%7|1564074177.294|CONNECT|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: broker in state TRY_CONNECT connecting
+%7|1564074177.294|STATE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+%7|1564074177.294|BROADCAST|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: Broadcasting state change
+%7|1564074177.294|CONNECT|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Connecting to ipv4#y,y.y.y:9092 (plaintext) with socket 18
+%7|1564074177.299|CONNECT|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Connected to ipv4#y,y.y.y:9092
+%7|1564074177.299|CONNECTED|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Connected (#1)
+%7|1564074177.299|FEATURE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Updated enabled protocol features +ApiVersion to ApiVersion
+%7|1564074177.299|STATE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Broker changed state CONNECT -> APIVERSION_QUERY
+%7|1564074177.299|BROADCAST|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: Broadcasting state change
+%7|1564074177.299|SEND|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Sent ApiVersionRequest (v0, 25 bytes @ 0, CorrId 1)
+%7|1564074177.305|RECV|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received ApiVersionResponse (v0, 276 bytes, CorrId 1, rtt 5.19ms)
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Broker API support:
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Produce (0) Versions 0..7
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Fetch (1) Versions 0..11
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Offset (2) Versions 0..5
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Metadata (3) Versions 0..8
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey LeaderAndIsr (4) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey StopReplica (5) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey UpdateMetadata (6) Versions 0..5
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey ControlledShutdown (7) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey OffsetCommit (8) Versions 0..7
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey OffsetFetch (9) Versions 0..5
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey GroupCoordinator (10) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey JoinGroup (11) Versions 0..5
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Heartbeat (12) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey LeaveGroup (13) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey SyncGroup (14) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DescribeGroups (15) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey ListGroups (16) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey SaslHandshake (17) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey ApiVersion (18) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey CreateTopics (19) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DeleteTopics (20) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DeleteRecords (21) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey InitProducerId (22) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey OffsetForLeaderEpoch (23) Versions 0..3
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey AddPartitionsToTxn (24) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey AddOffsetsToTxn (25) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey EndTxn (26) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey WriteTxnMarkers (27) Versions 0..0
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey TxnOffsetCommit (28) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DescribeAcls (29) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey CreateAcls (30) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DeleteAcls (31) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DescribeConfigs (32) Versions 0..2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey AlterConfigs (33) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey AlterReplicaLogDirs (34) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DescribeLogDirs (35) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey SaslAuthenticate (36) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey CreatePartitions (37) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey CreateDelegationToken (38) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey RenewDelegationToken (39) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey ExpireDelegationToken (40) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DescribeDelegationToken (41) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey DeleteGroups (42) Versions 0..1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Unknown-43? (43) Versions 0..0
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:   ApiKey Unknown-44? (44) Versions 0..0
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature MsgVer1: Produce (2..2) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature MsgVer1: Fetch (2..2) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature MsgVer1
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature MsgVer2: Produce (3..3) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature MsgVer2: Fetch (4..4) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature MsgVer2
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature ApiVersion: ApiVersion (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature ApiVersion
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerGroupCoordinator: GroupCoordinator (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature BrokerGroupCoordinator
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: GroupCoordinator (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: OffsetCommit (1..2) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: OffsetFetch (1..1) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: JoinGroup (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: SyncGroup (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: Heartbeat (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature BrokerBalancedConsumer: LeaveGroup (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature BrokerBalancedConsumer
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature ThrottleTime: Produce (1..2) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature ThrottleTime: Fetch (1..2) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature ThrottleTime
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature Sasl: JoinGroup (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature Sasl
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature SaslHandshake: SaslHandshake (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature SaslHandshake
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature LZ4: GroupCoordinator (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature LZ4
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature OffsetTime: Offset (1..1) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature OffsetTime
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature IdempotentProducer: InitProducerId (0..0) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature IdempotentProducer
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature ZSTD: Produce (7..7) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap:  Feature ZSTD: Fetch (10..10) supported by broker
+%7|1564074177.305|APIVERSION|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Enabling feature ZSTD
+%7|1564074177.305|FEATURE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Updated enabled protocol features to MsgVer1,ApiVersion,BrokerBalancedConsumer,ThrottleTime,Sasl,SaslHandshake,BrokerGroupCoordinator,LZ4,OffsetTime,MsgVer2,IdempotentProducer,ZSTD
+%7|1564074177.305|STATE|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Broker changed state APIVERSION_QUERY -> UP
+%7|1564074177.305|BROADCAST|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: Broadcasting state change
+%7|1564074177.305|METADATA|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Request metadata for brokers only: connected
+%7|1564074177.305|SEND|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Sent MetadataRequest (v2, 25 bytes @ 0, CorrId 2)
+%7|1564074177.311|RECV|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received MetadataResponse (v2, 82 bytes, CorrId 2, rtt 5.38ms)
+%7|1564074177.311|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ===== Received metadata: connected =====
+%7|1564074177.311|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ClusterId: -kXCQPgkQYWSwNmZA31PoA, ControllerId: 0
+%7|1564074177.311|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: 2 brokers, 0 topics
+%7|1564074177.311|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Broker #0/2: localnosql1:9092 NodeId 0
+%7|1564074177.311|WAKEUPFD|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Enabled low-latency ops queue wake-ups
+%7|1564074177.311|BROKER|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Added new broker with NodeId 0
+%7|1564074177.311|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Broker #1/2: localnosql2:9092 NodeId 1
+%7|1564074177.311|WAKEUPFD|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Enabled low-latency ops queue wake-ups
+%7|1564074177.311|BRKMAIN|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enter main broker thread
+%7|1564074177.311|BROKER|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Added new broker with NodeId 1
+%7|1564074177.311|CLUSTERID|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ClusterId update "" -> "-kXCQPgkQYWSwNmZA31PoA"
+%7|1564074177.311|CONTROLLERID|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ControllerId update -1 -> 0
+%7|1564074177.311|BRKMAIN|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enter main broker thread
+%7|1564074177.311|BROADCAST|rdkafka#consumer-1| [thrd:main]: Broadcasting state change
+%7|1564074177.311|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "My-group3": no topics in metadata matched subscription
+%7|1564074178.292|CGRPQUERY|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Group "My-group3": querying for coordinator: intervaled in state query-coord
+%7|1564074178.292|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed state query-coord -> wait-coord (v1, join-state init)
+%7|1564074178.292|BROADCAST|rdkafka#consumer-1| [thrd:main]: Broadcasting state change
+%7|1564074178.292|SEND|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Sent GroupCoordinatorRequest (v0, 36 bytes @ 0, CorrId 3)
+%7|1564074178.298|RECV|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received GroupCoordinatorResponse (v0, 23 bytes, CorrId 3, rtt 5.40ms)
+%7|1564074178.298|CGRPCOORD|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Group "My-group3" coordinator is localnosql1:9092 id 0
+%7|1564074178.298|CGRPCOORD|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changing coordinator -1 -> 0
+%7|1564074178.298|COORDSET|rdkafka#consumer-1| [thrd:main]: Group "My-group3" coordinator set to broker localnosql1:9092/0
+%7|1564074178.298|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed state wait-coord -> wait-broker-transport (v1, join-state init)
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:main]: Broadcasting state change
+%7|1564074178.298|NODENAME|rdkafka#consumer-1| [thrd:main]: GroupCoordinator: Broker nodename changed from "" to "localnosql1:9092"
+%7|1564074178.298|CONNECT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received CONNECT op
+%7|1564074178.298|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state INIT -> TRY_CONNECT
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.298|CGRPQUERY|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Group "My-group3": querying for coordinator: intervaled in state wait-broker-transport
+%7|1564074178.298|BROKERFAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: failed: err: Local: Broker node update: (errno: Success)
+%7|1564074178.298|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Closing connection due to nodename change (after 0ms in state TRY_CONNECT)
+%7|1564074178.298|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state TRY_CONNECT -> DOWN
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.298|BUFQ|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Purging bufq with 0 buffers
+%7|1564074178.298|BUFQ|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Purging bufq with 0 buffers
+%7|1564074178.298|BUFQ|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Updating 0 buffers on connection reset
+%7|1564074178.298|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state DOWN -> INIT
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.298|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state INIT -> TRY_CONNECT
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.298|CONNECT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: broker in state TRY_CONNECT connecting
+%7|1564074178.298|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state TRY_CONNECT -> CONNECT
+%7|1564074178.298|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.298|SEND|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Sent GroupCoordinatorRequest (v0, 36 bytes @ 0, CorrId 4)
+%7|1564074178.298|CONNECT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Connecting to ipv4#x.x.x.x:9092 (plaintext) with socket 23
+%7|1564074178.303|RECV|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received GroupCoordinatorResponse (v0, 23 bytes, CorrId 4, rtt 5.26ms)
+%7|1564074178.303|CGRPCOORD|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Group "My-group3" coordinator is localnosql1:9092 id 0
+%7|1564074178.304|CONNECT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Connected to ipv4#x.x.x.x:9092
+%7|1564074178.304|CONNECTED|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Connected (#1)
+%7|1564074178.304|FEATURE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Updated enabled protocol features +ApiVersion to ApiVersion
+%7|1564074178.304|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state CONNECT -> APIVERSION_QUERY
+%7|1564074178.304|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.304|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent ApiVersionRequest (v0, 25 bytes @ 0, CorrId 1)
+%7|1564074178.309|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received ApiVersionResponse (v0, 276 bytes, CorrId 1, rtt 5.20ms)
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Broker API support:
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Produce (0) Versions 0..7
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Fetch (1) Versions 0..11
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Offset (2) Versions 0..5
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Metadata (3) Versions 0..8
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey LeaderAndIsr (4) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey StopReplica (5) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey UpdateMetadata (6) Versions 0..5
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey ControlledShutdown (7) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey OffsetCommit (8) Versions 0..7
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey OffsetFetch (9) Versions 0..5
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey GroupCoordinator (10) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey JoinGroup (11) Versions 0..5
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Heartbeat (12) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey LeaveGroup (13) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey SyncGroup (14) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DescribeGroups (15) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey ListGroups (16) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey SaslHandshake (17) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey ApiVersion (18) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey CreateTopics (19) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DeleteTopics (20) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DeleteRecords (21) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey InitProducerId (22) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey OffsetForLeaderEpoch (23) Versions 0..3
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey AddPartitionsToTxn (24) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey AddOffsetsToTxn (25) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey EndTxn (26) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey WriteTxnMarkers (27) Versions 0..0
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey TxnOffsetCommit (28) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DescribeAcls (29) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey CreateAcls (30) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DeleteAcls (31) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DescribeConfigs (32) Versions 0..2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey AlterConfigs (33) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey AlterReplicaLogDirs (34) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DescribeLogDirs (35) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey SaslAuthenticate (36) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey CreatePartitions (37) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey CreateDelegationToken (38) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey RenewDelegationToken (39) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey ExpireDelegationToken (40) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DescribeDelegationToken (41) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey DeleteGroups (42) Versions 0..1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Unknown-43? (43) Versions 0..0
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:   ApiKey Unknown-44? (44) Versions 0..0
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature MsgVer1: Produce (2..2) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature MsgVer1: Fetch (2..2) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature MsgVer1
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature MsgVer2: Produce (3..3) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature MsgVer2: Fetch (4..4) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature MsgVer2
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature ApiVersion: ApiVersion (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature ApiVersion
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerGroupCoordinator: GroupCoordinator (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature BrokerGroupCoordinator
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: GroupCoordinator (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: OffsetCommit (1..2) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: OffsetFetch (1..1) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: JoinGroup (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: SyncGroup (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: Heartbeat (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature BrokerBalancedConsumer: LeaveGroup (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature BrokerBalancedConsumer
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature ThrottleTime: Produce (1..2) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature ThrottleTime: Fetch (1..2) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature ThrottleTime
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature Sasl: JoinGroup (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature Sasl
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature SaslHandshake: SaslHandshake (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature SaslHandshake
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature LZ4: GroupCoordinator (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature LZ4
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature OffsetTime: Offset (1..1) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature OffsetTime
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature IdempotentProducer: InitProducerId (0..0) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature IdempotentProducer
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature ZSTD: Produce (7..7) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0:  Feature ZSTD: Fetch (10..10) supported by broker
+%7|1564074178.309|APIVERSION|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Enabling feature ZSTD
+%7|1564074178.309|FEATURE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Updated enabled protocol features to MsgVer1,ApiVersion,BrokerBalancedConsumer,ThrottleTime,Sasl,SaslHandshake,BrokerGroupCoordinator,LZ4,OffsetTime,MsgVer2,IdempotentProducer,ZSTD
+%7|1564074178.309|STATE|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state APIVERSION_QUERY -> UP
+%7|1564074178.309|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074178.309|METADATA|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Request metadata for brokers only: connected
+%7|1564074178.309|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent MetadataRequest (v2, 25 bytes @ 0, CorrId 2)
+%7|1564074178.315|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received MetadataResponse (v2, 82 bytes, CorrId 2, rtt 5.40ms)
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: ===== Received metadata: connected =====
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: ClusterId: -kXCQPgkQYWSwNmZA31PoA, ControllerId: 0
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: 2 brokers, 0 topics
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Broker #0/2: localnosql1:9092 NodeId 0
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Broker #1/2: localnosql2:9092 NodeId 1
+%7|1564074178.315|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "My-group3": no topics in metadata matched subscription
+%7|1564074178.315|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed state wait-broker-transport -> up (v1, join-state init)
+%7|1564074178.315|BROADCAST|rdkafka#consumer-1| [thrd:main]: Broadcasting state change
+%7|1564074178.315|JOIN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": join with 0 (2) subscribed topic(s)
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: Hinted cache of 2/2 topic(s) being queried
+%7|1564074178.315|CGRPMETADATA|rdkafka#consumer-1| [thrd:main]: consumer join: metadata for subscription only available for 0/2 topics (-1ms old)
+%7|1564074178.315|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: Request metadata for 2 topic(s): consumer join
+%7|1564074178.315|JOIN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": postponing join until up-to-date metadata is available
+%7|1564074178.315|SEND|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Sent MetadataRequest (v2, 66 bytes @ 0, CorrId 5)
+%7|1564074178.321|RECV|rdkafka#consumer-1| [thrd:y,y.y.y:9092/bootstrap]: y,y.y.y:9092/bootstrap: Received MetadataResponse (v2, 817 bytes, CorrId 5, rtt 5.69ms)
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ===== Received metadata (for 2 requested topics): consumer join =====
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: ClusterId: -kXCQPgkQYWSwNmZA31PoA, ControllerId: 0
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: 2 brokers, 2 topics
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Broker #0/2: localnosql1:9092 NodeId 0
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Broker #1/2: localnosql2:9092 NodeId 1
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Topic #0/2: MyEVENTDATA with 10 partitions
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap:   Topic #1/2: MyNOTIFICATIONDATA with 10 partitions
+%7|1564074178.321|METADATA|rdkafka#consumer-1| [thrd:main]: y,y.y.y:9092/bootstrap: 2/2 requested topic(s) seen in metadata
+%7|1564074178.321|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "My-group3": effective subscription list changed from 0 to 2 topic(s):
+%7|1564074178.321|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]:  Topic MyEVENTDATA with 10 partition(s)
+%7|1564074178.321|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]:  Topic MyNOTIFICATIONDATA with 10 partition(s)
+%7|1564074178.321|REJOIN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": subscription updated from metadata change: rejoining group
+%7|1564074178.321|GRPLEADER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": resetting group leader info: Group rejoin
+%7|1564074178.321|REJOIN|rdkafka#consumer-1| [thrd:main]: Group "My-group3" rejoining in join-state init without an assignment
+%7|1564074178.321|REBALANCE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" is rebalancing in state up (join-state init) without assignment: group rejoin
+%7|1564074178.321|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state init -> wait-unassign (v1, state up)
+%7|1564074178.321|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": unassign done in state up (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1564074178.321|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-unassign -> init (v1, state up)
+%7|1564074180.292|JOIN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": join with 2 (2) subscribed topic(s)
+%7|1564074180.292|CGRPMETADATA|rdkafka#consumer-1| [thrd:main]: consumer join: metadata for subscription is up to date (1971ms old)
+%7|1564074180.292|JOIN|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Joining group "My-group3" with 2 subscribed topic(s)
+%7|1564074180.292|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state init -> wait-join (v1, state up)
+%7|1564074180.292|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent JoinGroupRequest (v2, 189 bytes @ 0, CorrId 3)
+%7|1564074180.292|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074180.299|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received JoinGroupResponse (v2, 214 bytes, CorrId 3, rtt 6.48ms)
+%7|1564074180.299|JOINGROUP|rdkafka#consumer-1| [thrd:main]: JoinGroup response: GenerationId 1, Protocol range, LeaderId rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8 (me), my MemberId rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8, 1 members in group: (no error)
+%7|1564074180.299|MEMBERID|rdkafka#consumer-1| [thrd:main]: Group "My-group3": updating member id "" -> "rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8"
+%7|1564074180.299|JOINGROUP|rdkafka#consumer-1| [thrd:main]: Elected leader for group "My-group3" with 1 member(s)
+%7|1564074180.299|GRPLEADER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": resetting group leader info: JoinGroup response clean-up
+%7|1564074180.299|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-join -> wait-metadata (v1, state up)
+%7|1564074180.299|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: Request metadata for 2 topic(s): partition assignor
+%7|1564074180.299|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent MetadataRequest (v2, 66 bytes @ 0, CorrId 4)
+%7|1564074180.304|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received MetadataResponse (v2, 817 bytes, CorrId 4, rtt 5.46ms)
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: ===== Received metadata (for 2 requested topics): partition assignor =====
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: ClusterId: -kXCQPgkQYWSwNmZA31PoA, ControllerId: 0
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: 2 brokers, 2 topics
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Broker #0/2: localnosql1:9092 NodeId 0
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Broker #1/2: localnosql2:9092 NodeId 1
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Topic #0/2: MyEVENTDATA with 10 partitions
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0:   Topic #1/2: MyNOTIFICATIONDATA with 10 partitions
+%7|1564074180.305|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: 2/2 requested topic(s) seen in metadata
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3" running range assignment for 1 member(s):
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8" (me) with 2 subscription(s):
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [-1]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [-1]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Topic MyEVENTDATA with 10 partition(s) and 1 subscribing member(s)
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8": assigned topic MyEVENTDATA partitions 0..9
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Topic MyNOTIFICATIONDATA with 10 partition(s) and 1 subscribing member(s)
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8": assigned topic MyNOTIFICATIONDATA partitions 0..9
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3" range assignment for 1 member(s) finished in 0.034ms:
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-87b3019b-1aed-4e50-8af2-638b65908fe8" (me) assigned 20 partition(s):
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [0]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [1]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [2]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [3]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [4]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [5]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [6]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [7]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [8]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyEVENTDATA [9]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [0]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [1]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [2]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [3]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [4]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [5]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [6]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [7]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [8]
+%7|1564074180.305|ASSIGN|rdkafka#consumer-1| [thrd:main]:   MyNOTIFICATIONDATA [9]
+%7|1564074180.305|ASSIGNOR|rdkafka#consumer-1| [thrd:main]: Group "My-group3": "range" assignor run for 1 member(s)
+%7|1564074180.305|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-metadata -> wait-sync (v1, state up)
+%7|1564074180.305|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent SyncGroupRequest (v0, 279 bytes @ 0, CorrId 5)
+%7|1564074180.305|BROADCAST|rdkafka#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1564074180.311|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received SyncGroupResponse (v0, 145 bytes, CorrId 5, rtt 6.04ms)
+%7|1564074180.311|SYNCGROUP|rdkafka#consumer-1| [thrd:main]: SyncGroup response: Success (139 bytes of MemberState data)
+%7|1564074180.311|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": delegating assign of 20 partition(s) to application rebalance callback on queue rd_kafka_cgrp_new: new assignment
+%7|1564074180.311|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-sync -> wait-assign-rebalance_cb (v1, state up)
+%7|1564074180.311|HEARTBEAT|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: Heartbeat for group "My-group3" generation id 1
+%7|1564074180.311|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent HeartbeatRequest (v0, 86 bytes @ 0, CorrId 6)
+%7|1564074180.311|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op ASSIGN (v0) in state up (join state wait-assign-rebalance_cb, v1 vs 0)
+%7|1564074180.311|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": new assignment of 20 partition(s) in join state wait-assign-rebalance_cb
+%7|1564074180.311|TOPIC|rdkafka#consumer-1| [thrd:main]: New local topic: MyEVENTDATA
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [-1] 0x7f4794003a70 (at rd_kafka_topic_new0:393)
+%7|1564074180.311|STATE|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA changed state unknown -> exists
+%7|1564074180.311|PARTCNT|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA partition count changed from 0 to 10
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [0] 0x7f4794003f70 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [1] 0x7f4794006700 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [2] 0x7f4794006a80 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [3] 0x7f4794006f80 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [4] 0x7f4794007480 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [5] 0x7f4794007980 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [6] 0x7f4794007e80 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [7] 0x7f4794008380 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [8] 0x7f4794008880 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyEVENTDATA [9] 0x7f4794008d80 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 0 Leader 1
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [0]: delegate to broker localnosql2:9092/1 (rktp 0x7f4794003f70, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [0]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [0] 0x7f4794003f70 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 1 Leader 0
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [1]: delegate to broker localnosql1:9092/0 (rktp 0x7f4794006700, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [1]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [1] 0x7f4794006700 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 2 Leader 1
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [2]: delegate to broker localnosql2:9092/1 (rktp 0x7f4794006a80, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [2]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [2] 0x7f4794006a80 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 3 Leader 0
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [3]: delegate to broker localnosql1:9092/0 (rktp 0x7f4794006f80, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [3]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [3] 0x7f4794006f80 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 4 Leader 1
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [4]: delegate to broker localnosql2:9092/1 (rktp 0x7f4794007480, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [4]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [4] 0x7f4794007480 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 5 Leader 0
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0]: joining broker (rktp 0x7f4794003f70, 0 message(s) queued)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [5]: delegate to broker localnosql1:9092/0 (rktp 0x7f4794007980, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [5]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [5] 0x7f4794007980 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 6 Leader 1
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [6]: delegate to broker localnosql2:9092/1 (rktp 0x7f4794007e80, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [6]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [6] 0x7f4794007e80 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 7 Leader 0
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [7]: delegate to broker localnosql1:9092/0 (rktp 0x7f4794008380, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [7]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [7] 0x7f4794008380 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 8 Leader 1
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [8]: delegate to broker localnosql2:9092/1 (rktp 0x7f4794008880, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [8]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [8] 0x7f4794008880 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.311|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyEVENTDATA partition 9 Leader 0
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [9]: delegate to broker localnosql1:9092/0 (rktp 0x7f4794008d80, term 0, ref 2, remove 0)
+%7|1564074180.311|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [9]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.311|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyEVENTDATA [9] 0x7f4794008d80 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [1]: joining broker (rktp 0x7f4794006700, 0 message(s) queued)
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [3]: joining broker (rktp 0x7f4794006f80, 0 message(s) queued)
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [5]: joining broker (rktp 0x7f4794007980, 0 message(s) queued)
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [7]: joining broker (rktp 0x7f4794008380, 0 message(s) queued)
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [9]: joining broker (rktp 0x7f4794008d80, 0 message(s) queued)
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|STATE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Broker changed state INIT -> TRY_CONNECT
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.311|CONNECT|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: broker in state TRY_CONNECT connecting
+%7|1564074180.311|STATE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Broker changed state TRY_CONNECT -> CONNECT
+%7|1564074180.311|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|CONNECT|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Connecting to ipv4#x.x.x.x:9092 (plaintext) with socket 24
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [2]: joining broker (rktp 0x7f4794006a80, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [4]: joining broker (rktp 0x7f4794007480, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [6]: joining broker (rktp 0x7f4794007e80, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [8]: joining broker (rktp 0x7f4794008880, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [0] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [1] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [2] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [3] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [4] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [5] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [6] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [7] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [8] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyEVENTDATA [9] partition as desired
+%7|1564074180.312|STATE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Broker changed state INIT -> TRY_CONNECT
+%7|1564074180.312|TOPIC|rdkafka#consumer-1| [thrd:main]: New local topic: MyNOTIFICATIONDATA
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [-1] 0x7f4794009ba0 (at rd_kafka_topic_new0:393)
+%7|1564074180.312|CONNECT|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: broker in state TRY_CONNECT connecting
+%7|1564074180.312|STATE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Broker changed state TRY_CONNECT -> CONNECT
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|STATE|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA changed state unknown -> exists
+%7|1564074180.312|PARTCNT|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA partition count changed from 0 to 10
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [0] 0x7f479400a0a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [1] 0x7f479400a5a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [2] 0x7f479400aaa0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [3] 0x7f479400afa0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [4] 0x7f479400b4a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [5] 0x7f479400b9a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [6] 0x7f479400bea0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [7] 0x7f479400c3a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [8] 0x7f479400c8a0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|CONNECT|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Connecting to ipv4#y,y.y.y:9092 (plaintext) with socket 25
+%7|1564074180.312|TOPPARNEW|rdkafka#consumer-1| [thrd:main]: NEW MyNOTIFICATIONDATA [9] 0x7f479400cda0 (at rd_kafka_topic_partition_cnt_update:620)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 0 Leader 0
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [0]: delegate to broker localnosql1:9092/0 (rktp 0x7f479400a0a0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [0]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [0] 0x7f479400a0a0 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 1 Leader 1
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [1]: delegate to broker localnosql2:9092/1 (rktp 0x7f479400a5a0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [1]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [0]: joining broker (rktp 0x7f479400a0a0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [1] 0x7f479400a5a0 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 2 Leader 0
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [1]: joining broker (rktp 0x7f479400a5a0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [2]: delegate to broker localnosql1:9092/0 (rktp 0x7f479400aaa0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [2]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [2] 0x7f479400aaa0 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 3 Leader 1
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [3]: delegate to broker localnosql2:9092/1 (rktp 0x7f479400afa0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [3]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [2]: joining broker (rktp 0x7f479400aaa0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [3] 0x7f479400afa0 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 4 Leader 0
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [3]: joining broker (rktp 0x7f479400afa0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [4]: delegate to broker localnosql1:9092/0 (rktp 0x7f479400b4a0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [4]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [4] 0x7f479400b4a0 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 5 Leader 1
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [5]: delegate to broker localnosql2:9092/1 (rktp 0x7f479400b9a0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [5]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [4]: joining broker (rktp 0x7f479400b4a0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [5] 0x7f479400b9a0 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 6 Leader 0
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [6]: delegate to broker localnosql1:9092/0 (rktp 0x7f479400bea0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [6]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [5]: joining broker (rktp 0x7f479400b9a0, 0 message(s) queued)
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [6] 0x7f479400bea0 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [6]: joining broker (rktp 0x7f479400bea0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 7 Leader 1
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [7]: delegate to broker localnosql2:9092/1 (rktp 0x7f479400c3a0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [7]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [7] 0x7f479400c3a0 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 8 Leader 0
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [8]: delegate to broker localnosql1:9092/0 (rktp 0x7f479400c8a0, term 0, ref 2, remove 0)
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [7]: joining broker (rktp 0x7f479400c3a0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [8]: broker localnosql1:9092/0 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [8] 0x7f479400c8a0 from (none) to localnosql1:9092/0 (sending PARTITION_JOIN to localnosql1:9092/0)
+%7|1564074180.312|METADATA|rdkafka#consumer-1| [thrd:main]:   Topic MyNOTIFICATIONDATA partition 9 Leader 1
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [9]: delegate to broker localnosql2:9092/1 (rktp 0x7f479400cda0, term 0, ref 2, remove 0)
+%7|1564074180.312|BRKDELGT|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [9]: broker localnosql2:9092/1 is now leader for partition with 0 messages (0 bytes) queued
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [8]: joining broker (rktp 0x7f479400c8a0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.312|BRKMIGR|rdkafka#consumer-1| [thrd:main]: Migrating topic MyNOTIFICATIONDATA [9] 0x7f479400cda0 from (none) to localnosql2:9092/1 (sending PARTITION_JOIN to localnosql2:9092/1)
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [0] partition as desired
+%7|1564074180.312|TOPBRK|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [9]: joining broker (rktp 0x7f479400cda0, 0 message(s) queued)
+%7|1564074180.312|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [1] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [2] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [3] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [4] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [5] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [6] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [7] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [8] partition as desired
+%7|1564074180.312|DESP|rdkafka#consumer-1| [thrd:main]: Setting topic MyNOTIFICATIONDATA [9] partition as desired
+%7|1564074180.312|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": rd_kafka_cgrp_assign:2354: new version barrier v2
+%7|1564074180.312|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "My-group3": assigning 20 partition(s) in join state wait-assign-rebalance_cb
+%7|1564074180.312|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state wait-assign-rebalance_cb -> assigned (v2, state up)
+%7|1564074180.312|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": rd_kafka_cgrp_partitions_fetch_start0:1674: new version barrier v3
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]: Group "My-group3": starting fetchers for 20 assigned partition(s) in join-state assigned (usable_offsets=no, v3, line 2399)
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]: List with 20 partition(s):
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [0] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [1] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [2] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [3] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [4] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [5] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [6] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [7] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [8] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [9] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [0] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [1] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [2] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [3] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [4] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [5] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [6] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [7] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [8] offset INVALID
+%7|1564074180.312|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [9] offset INVALID
+%7|1564074180.312|OFFSET|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchRequest(v1) for 20/20 partition(s)
+%7|1564074180.312|OFFSET|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: Fetch committed offsets for 20/20 partition(s)
+%7|1564074180.312|SEND|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Sent OffsetFetchRequest (v1, 169 bytes @ 0, CorrId 7)
+%7|1564074180.317|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received HeartbeatResponse (v0, 2 bytes, CorrId 6, rtt 5.49ms)
+%7|1564074180.317|CONNECT|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Connected to ipv4#x.x.x.x:9092
+%7|1564074180.317|CONNECT|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Connected to ipv4#y,y.y.y:9092
+%7|1564074180.317|CONNECTED|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Connected (#1)
+%7|1564074180.317|FEATURE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Updated enabled protocol features +ApiVersion to ApiVersion
+%7|1564074180.317|CONNECTED|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Connected (#1)
+%7|1564074180.317|FEATURE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Updated enabled protocol features +ApiVersion to ApiVersion
+%7|1564074180.317|STATE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Broker changed state CONNECT -> APIVERSION_QUERY
+%7|1564074180.317|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.317|STATE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Broker changed state CONNECT -> APIVERSION_QUERY
+%7|1564074180.317|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.317|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent ApiVersionRequest (v0, 25 bytes @ 0, CorrId 1)
+%7|1564074180.317|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent ApiVersionRequest (v0, 25 bytes @ 0, CorrId 1)
+%7|1564074180.322|RECV|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/0: Received OffsetFetchResponse (v1, 373 bytes, CorrId 7, rtt 9.84ms)
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: List with 20 partition(s):
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [0] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [1] offset INVALID
+%7|1564074180.322|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received ApiVersionResponse (v0, 276 bytes, CorrId 1, rtt 5.12ms)
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [2] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [3] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [4] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [5] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [6] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [7] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [8] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [9] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [0] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [1] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [2] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [3] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [4] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [5] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [6] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [7] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [8] offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [9] offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [0]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [1]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [2]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [3]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [4]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [5]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [6]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [7]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [8]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyEVENTDATA [9]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [0]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [1]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [2]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [3]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [4]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [5]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [6]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [7]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [8]: setting default offset INVALID
+%7|1564074180.322|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic MyNOTIFICATIONDATA [9]: setting default offset INVALID
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [0] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [1] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [2] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [3] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [4] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [5] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [6] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [7] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [8] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyEVENTDATA [9] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [0] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [1] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [2] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [3] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [4] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [5] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [6] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [7] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [8] offset -1
+%7|1564074180.322|OFFSETFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetchResponse: MyNOTIFICATIONDATA [9] offset -1
+%7|1564074180.322|OFFFETCH|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/0: OffsetFetch for 20/20 partition(s) returned Success
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "My-group3": rd_kafka_cgrp_partitions_fetch_start0:1674: new version barrier v4
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]: Group "My-group3": starting fetchers for 20 assigned partition(s) in join-state assigned (usable_offsets=yes, v4, line 1606)
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]: List with 20 partition(s):
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [0] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [1] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [2] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [3] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [4] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [5] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [6] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [7] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [8] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyEVENTDATA [9] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [0] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [1] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [2] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [3] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [4] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [5] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [6] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [7] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [8] offset INVALID
+%7|1564074180.322|FETCHSTART|rdkafka#consumer-1| [thrd:main]:  MyNOTIFICATIONDATA [9] offset INVALID
+%7|1564074180.322|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "My-group3" changed join state assigned -> started (v4, state up)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [0]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [0] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [1]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [1] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [2]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [2] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [3]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [3] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [4]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [4] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [5]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [5] at offset INVALID (v2)
+%7|1564074180.322|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [6]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.322|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [6] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [7]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [7] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [8]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [8] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [9]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyEVENTDATA [9] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [0]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [0] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [1]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [1] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [2]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [2] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [3]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [3] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [4]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [4] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [5]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [5] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [6]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [6] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [7]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [7] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [8]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [8] at offset INVALID (v2)
+%7|1564074180.323|BARRIER|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [9]: rd_kafka_toppar_op_fetch_start:2226: new version barrier v2
+%7|1564074180.323|CONSUMER|rdkafka#consumer-1| [thrd:main]: Start consuming MyNOTIFICATIONDATA [9] at offset INVALID (v2)
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [0] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [0] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [0] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [0]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyEVENTDATA [0]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [0] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [1] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [1] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [1] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [1]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyEVENTDATA [1]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [1] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [2] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [2] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [2] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [2]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyEVENTDATA [2]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [2] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [3] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [3] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [3] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [3]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyEVENTDATA [3]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [3] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [4] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [4] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [4] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [4]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyEVENTDATA [4]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [4] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [5] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [5] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [5] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [5]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyEVENTDATA [5]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [5] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [6] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [6] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [6] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [6]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyEVENTDATA [6]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [6] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [7] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [7] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [7] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [7]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyEVENTDATA [7]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [7] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [8] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [8] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [8] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [8]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyEVENTDATA [8]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [8] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [9] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyEVENTDATA [9] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [9] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyEVENTDATA [9]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyEVENTDATA [9]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [9] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [0] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [0] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [0] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [0]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyNOTIFICATIONDATA [0]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [0] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [1] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [1] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [1] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [1]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyNOTIFICATIONDATA [1]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [1] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [2] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [2] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [2] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [2]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyNOTIFICATIONDATA [2]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [2] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [3] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [3] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [3] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [3]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyNOTIFICATIONDATA [3]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [3] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [4] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [4] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [4] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [4]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyNOTIFICATIONDATA [4]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [4] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [5] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [5] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [5] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [5]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyNOTIFICATIONDATA [5]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [5] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [6] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [6] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [6] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [6]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyNOTIFICATIONDATA [6]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [6] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [7] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [7] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [7] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [7]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyNOTIFICATIONDATA [7]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [7] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [8] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [8] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [8] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [8]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Partition MyNOTIFICATIONDATA [8]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [8] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|OP|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [9] received op FETCH_START (v2) in fetch-state none (opv1)
+%7|1564074180.323|FETCH|rdkafka#consumer-1| [thrd:main]: Start fetch for MyNOTIFICATIONDATA [9] in state none at offset INVALID (v2)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [9] changed fetch state none -> offset-query
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: MyNOTIFICATIONDATA [9]: offset reset (at offset INVALID) to BEGINNING: no previously committed offset available: Local: No offset stored
+%7|1564074180.323|OFFREQ|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Partition MyNOTIFICATIONDATA [9]: querying for logical offset BEGINNING (opv 2)
+%7|1564074180.323|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: OffsetRequest (v0, opv 0) for 1 topic(s) and 1 partition(s)
+%7|1564074180.323|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [9] changed fetch state offset-query -> offset-wait
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [0]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [0]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [1]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [1]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [2]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [2]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [3]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [3]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [4]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [4]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [5]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [5]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [6]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [6]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [7]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [7]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [8]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [8]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyEVENTDATA [9]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyEVENTDATA [9]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [0]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [0]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [1]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [1]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [2]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [2]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [3]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [3]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [4]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [4]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [5]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [5]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [6]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [6]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [7]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [7]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [8]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [8]
+%7|1564074180.323|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "My-group3" received op PARTITION_JOIN in state up (join state started, v4) for MyNOTIFICATIONDATA [9]
+%7|1564074180.323|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "My-group3": add MyNOTIFICATIONDATA [9]
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Broker API support:
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Produce (0) Versions 0..7
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Fetch (1) Versions 0..11
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Offset (2) Versions 0..5
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Metadata (3) Versions 0..8
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey LeaderAndIsr (4) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey StopReplica (5) Versions 0..1
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey UpdateMetadata (6) Versions 0..5
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey ControlledShutdown (7) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey OffsetCommit (8) Versions 0..7
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey OffsetFetch (9) Versions 0..5
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey GroupCoordinator (10) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey JoinGroup (11) Versions 0..5
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Heartbeat (12) Versions 0..3
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey LeaveGroup (13) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey SyncGroup (14) Versions 0..3
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DescribeGroups (15) Versions 0..3
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey ListGroups (16) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey SaslHandshake (17) Versions 0..1
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey ApiVersion (18) Versions 0..2
+%7|1564074180.323|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey CreateTopics (19) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DeleteTopics (20) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DeleteRecords (21) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey InitProducerId (22) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey OffsetForLeaderEpoch (23) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey AddPartitionsToTxn (24) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey AddOffsetsToTxn (25) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey EndTxn (26) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey WriteTxnMarkers (27) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey TxnOffsetCommit (28) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DescribeAcls (29) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey CreateAcls (30) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DeleteAcls (31) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DescribeConfigs (32) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey AlterConfigs (33) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey AlterReplicaLogDirs (34) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DescribeLogDirs (35) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey SaslAuthenticate (36) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey CreatePartitions (37) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey CreateDelegationToken (38) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey RenewDelegationToken (39) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey ExpireDelegationToken (40) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DescribeDelegationToken (41) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey DeleteGroups (42) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Unknown-43? (43) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:   ApiKey Unknown-44? (44) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature MsgVer1: Produce (2..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature MsgVer1: Fetch (2..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature MsgVer1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature MsgVer2: Produce (3..3) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature MsgVer2: Fetch (4..4) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature MsgVer2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature ApiVersion: ApiVersion (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature ApiVersion
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerGroupCoordinator: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature BrokerGroupCoordinator
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: OffsetCommit (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: OffsetFetch (1..1) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: JoinGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: SyncGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: Heartbeat (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature BrokerBalancedConsumer: LeaveGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature BrokerBalancedConsumer
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature ThrottleTime: Produce (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature ThrottleTime: Fetch (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature ThrottleTime
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature Sasl: JoinGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature Sasl
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature SaslHandshake: SaslHandshake (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature SaslHandshake
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature LZ4: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature LZ4
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature OffsetTime: Offset (1..1) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature OffsetTime
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature IdempotentProducer: InitProducerId (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature IdempotentProducer
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature ZSTD: Produce (7..7) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0:  Feature ZSTD: Fetch (10..10) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Enabling feature ZSTD
+%7|1564074180.324|FEATURE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Updated enabled protocol features to MsgVer1,ApiVersion,BrokerBalancedConsumer,ThrottleTime,Sasl,SaslHandshake,BrokerGroupCoordinator,LZ4,OffsetTime,MsgVer2,IdempotentProducer,ZSTD
+%7|1564074180.324|STATE|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Broker changed state APIVERSION_QUERY -> UP
+%7|1564074180.324|BROADCAST|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Broadcasting state change
+%7|1564074180.324|METADATA|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Skipping metadata refresh of 2 topic(s): connected: already being requested
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 2)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 3)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 4)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 5)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 6)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 7)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 8)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 9)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 10)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 11)
+%7|1564074180.324|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received ApiVersionResponse (v0, 276 bytes, CorrId 1, rtt 6.97ms)
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Broker API support:
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Produce (0) Versions 0..7
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Fetch (1) Versions 0..11
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Offset (2) Versions 0..5
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Metadata (3) Versions 0..8
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey LeaderAndIsr (4) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey StopReplica (5) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey UpdateMetadata (6) Versions 0..5
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey ControlledShutdown (7) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey OffsetCommit (8) Versions 0..7
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey OffsetFetch (9) Versions 0..5
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey GroupCoordinator (10) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey JoinGroup (11) Versions 0..5
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Heartbeat (12) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey LeaveGroup (13) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey SyncGroup (14) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DescribeGroups (15) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey ListGroups (16) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey SaslHandshake (17) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey ApiVersion (18) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey CreateTopics (19) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DeleteTopics (20) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DeleteRecords (21) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey InitProducerId (22) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey OffsetForLeaderEpoch (23) Versions 0..3
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey AddPartitionsToTxn (24) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey AddOffsetsToTxn (25) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey EndTxn (26) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey WriteTxnMarkers (27) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey TxnOffsetCommit (28) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DescribeAcls (29) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey CreateAcls (30) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DeleteAcls (31) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DescribeConfigs (32) Versions 0..2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey AlterConfigs (33) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey AlterReplicaLogDirs (34) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DescribeLogDirs (35) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey SaslAuthenticate (36) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey CreatePartitions (37) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey CreateDelegationToken (38) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey RenewDelegationToken (39) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey ExpireDelegationToken (40) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DescribeDelegationToken (41) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey DeleteGroups (42) Versions 0..1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Unknown-43? (43) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:   ApiKey Unknown-44? (44) Versions 0..0
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature MsgVer1: Produce (2..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature MsgVer1: Fetch (2..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature MsgVer1
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature MsgVer2: Produce (3..3) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature MsgVer2: Fetch (4..4) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature MsgVer2
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature ApiVersion: ApiVersion (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature ApiVersion
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerGroupCoordinator: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature BrokerGroupCoordinator
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: OffsetCommit (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: OffsetFetch (1..1) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: JoinGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: SyncGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: Heartbeat (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature BrokerBalancedConsumer: LeaveGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature BrokerBalancedConsumer
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature ThrottleTime: Produce (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature ThrottleTime: Fetch (1..2) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature ThrottleTime
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature Sasl: JoinGroup (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature Sasl
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature SaslHandshake: SaslHandshake (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature SaslHandshake
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature LZ4: GroupCoordinator (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature LZ4
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature OffsetTime: Offset (1..1) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature OffsetTime
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature IdempotentProducer: InitProducerId (0..0) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature IdempotentProducer
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature ZSTD: Produce (7..7) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1:  Feature ZSTD: Fetch (10..10) supported by broker
+%7|1564074180.324|APIVERSION|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Enabling feature ZSTD
+%7|1564074180.324|FEATURE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Updated enabled protocol features to MsgVer1,ApiVersion,BrokerBalancedConsumer,ThrottleTime,Sasl,SaslHandshake,BrokerGroupCoordinator,LZ4,OffsetTime,MsgVer2,IdempotentProducer,ZSTD
+%7|1564074180.324|STATE|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Broker changed state APIVERSION_QUERY -> UP
+%7|1564074180.324|BROADCAST|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Broadcasting state change
+%7|1564074180.324|METADATA|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Skipping metadata refresh of 2 topic(s): connected: already being requested
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 2)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 3)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 4)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 5)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 66 bytes @ 0, CorrId 6)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 7)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 8)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 9)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 10)
+%7|1564074180.324|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent OffsetRequest (v0, 73 bytes @ 0, CorrId 11)
+%7|1564074180.330|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 43 bytes, CorrId 2, rtt 5.42ms)
+%7|1564074180.330|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyEVENTDATA [0] (v2 vs v2)
+%7|1564074180.330|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [0] returned offset 53106 (53106)
+%7|1564074180.330|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [0] changed fetch state offset-wait -> active
+%7|1564074180.330|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [0] start fetching at offset 53106
+%7|1564074180.330|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.330|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyEVENTDATA [0]: fetch decide: updating to version 2 (was 0) at offset 53106 (was 0)
+%7|1564074180.330|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0] in state active at offset 53106 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.330|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyEVENTDATA [0] to fetch list (1 entries, opv 2, 0 messages queued)
+%7|1564074180.330|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [0] at offset 53106 (v2)
+%7|1564074180.330|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch 1/1/10 toppar(s)
+%7|1564074180.330|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent FetchRequest (v4, 79 bytes @ 0, CorrId 12)
+%7|1564074180.335|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 43 bytes, CorrId 3, rtt 10.89ms)
+%7|1564074180.335|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 43 bytes, CorrId 4, rtt 10.91ms)
+%7|1564074180.335|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 43 bytes, CorrId 5, rtt 10.91ms)
+%7|1564074180.335|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 43 bytes, CorrId 6, rtt 10.92ms)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyEVENTDATA [2] (v2 vs v2)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [2] returned offset 76 (76)
+%7|1564074180.335|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [2] changed fetch state offset-wait -> active
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [2] start fetching at offset 76
+%7|1564074180.335|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyEVENTDATA [4] (v2 vs v2)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [4] returned offset 9644 (9644)
+%7|1564074180.335|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [4] changed fetch state offset-wait -> active
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [4] start fetching at offset 9644
+%7|1564074180.335|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyEVENTDATA [6] (v2 vs v2)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [6] returned offset 17608 (17608)
+%7|1564074180.335|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [6] changed fetch state offset-wait -> active
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [6] start fetching at offset 17608
+%7|1564074180.335|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.335|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyEVENTDATA [2]: fetch decide: updating to version 2 (was 0) at offset 76 (was 0)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyEVENTDATA [8] (v2 vs v2)
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [2] in state active at offset 76 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.335|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyEVENTDATA [2] to fetch list (2 entries, opv 2, 0 messages queued)
+%7|1564074180.335|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyEVENTDATA [4]: fetch decide: updating to version 2 (was 0) at offset 9644 (was 0)
+%7|1564074180.335|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [8] returned offset 0 (0)
+%7|1564074180.335|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [8] changed fetch state offset-wait -> active
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [8] start fetching at offset 0
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.335|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [4] in state active at offset 9644 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyEVENTDATA [4] to fetch list (3 entries, opv 2, 0 messages queued)
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyEVENTDATA [6]: fetch decide: updating to version 2 (was 0) at offset 17608 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [6] in state active at offset 17608 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyEVENTDATA [6] to fetch list (4 entries, opv 2, 0 messages queued)
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyEVENTDATA [8]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [8] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyEVENTDATA [8] to fetch list (5 entries, opv 2, 0 messages queued)
+%7|1564074180.336|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 50 bytes, CorrId 7, rtt 11.25ms)
+%7|1564074180.336|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 50 bytes, CorrId 8, rtt 11.27ms)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyNOTIFICATIONDATA [1] (v2 vs v2)
+%7|1564074180.336|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 50 bytes, CorrId 9, rtt 11.28ms)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [1] returned offset 23 (23)
+%7|1564074180.336|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [1] changed fetch state offset-wait -> active
+%7|1564074180.336|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 50 bytes, CorrId 10, rtt 11.29ms)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [1] start fetching at offset 23
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyNOTIFICATIONDATA [1]: fetch decide: updating to version 2 (was 0) at offset 23 (was 0)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyNOTIFICATIONDATA [3] (v2 vs v2)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [1] in state active at offset 23 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [3] returned offset 0 (0)
+%7|1564074180.336|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [3] changed fetch state offset-wait -> active
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [3] start fetching at offset 0
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyNOTIFICATIONDATA [1] to fetch list (6 entries, opv 2, 0 messages queued)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyNOTIFICATIONDATA [5] (v2 vs v2)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [5] returned offset 0 (0)
+%7|1564074180.336|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [5] changed fetch state offset-wait -> active
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [5] start fetching at offset 0
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyNOTIFICATIONDATA [7] (v2 vs v2)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [7] returned offset 19 (19)
+%7|1564074180.336|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [7] changed fetch state offset-wait -> active
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [7] start fetching at offset 19
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyNOTIFICATIONDATA [3]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [3] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyNOTIFICATIONDATA [3] to fetch list (7 entries, opv 2, 0 messages queued)
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyNOTIFICATIONDATA [5]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [5] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyNOTIFICATIONDATA [5] to fetch list (8 entries, opv 2, 0 messages queued)
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyNOTIFICATIONDATA [7]: fetch decide: updating to version 2 (was 0) at offset 19 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [7] in state active at offset 19 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyNOTIFICATIONDATA [7] to fetch list (9 entries, opv 2, 0 messages queued)
+%7|1564074180.336|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received OffsetResponse (v0, 50 bytes, CorrId 11, rtt 11.46ms)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Offset reply for topic MyNOTIFICATIONDATA [9] (v2 vs v2)
+%7|1564074180.336|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [9] returned offset 0 (0)
+%7|1564074180.336|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [9] changed fetch state offset-wait -> active
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [9] start fetching at offset 0
+%7|1564074180.336|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql2:9092/1: Wake-up
+%7|1564074180.336|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: Topic MyNOTIFICATIONDATA [9]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.336|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [9] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.336|FETCHADD|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Added MyNOTIFICATIONDATA [9] to fetch list (10 entries, opv 2, 0 messages queued)
+%7|1564074180.441|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received FetchResponse (v4, 59 bytes, CorrId 12, rtt 111.40ms)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0] MessageSet size 0, error "Success", MaxOffset 53106, Ver 2/2
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [0] at offset 53106 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [2] at offset 76 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [4] at offset 9644 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [6] at offset 17608 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [8] at offset 0 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [1] at offset 23 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [3] at offset 0 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [5] at offset 0 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [7] at offset 19 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [9] at offset 0 (v2)
+%7|1564074180.441|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch 10/10/10 toppar(s)
+%7|1564074180.441|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent FetchRequest (v4, 251 bytes @ 0, CorrId 13)
+%7|1564074180.543|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 43 bytes, CorrId 2, rtt 219.63ms)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyEVENTDATA [1] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [1] returned offset 240 (240)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [1] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [1] start fetching at offset 240
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyEVENTDATA [1]: fetch decide: updating to version 2 (was 0) at offset 240 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [1] in state active at offset 240 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyEVENTDATA [1] to fetch list (1 entries, opv 2, 0 messages queued)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [1] at offset 240 (v2)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch 1/1/10 toppar(s)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 43 bytes, CorrId 3, rtt 219.88ms)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyEVENTDATA [3] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [3] returned offset 2204 (2204)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [3] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [3] start fetching at offset 2204
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 43 bytes, CorrId 4, rtt 219.92ms)
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyEVENTDATA [5] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [5] returned offset 0 (0)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [5] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [5] start fetching at offset 0
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 43 bytes, CorrId 5, rtt 220.05ms)
+%7|1564074180.544|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent FetchRequest (v4, 79 bytes @ 0, CorrId 12)
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyEVENTDATA [3]: fetch decide: updating to version 2 (was 0) at offset 2204 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [3] in state active at offset 2204 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyEVENTDATA [3] to fetch list (2 entries, opv 2, 0 messages queued)
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyEVENTDATA [5]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [5] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyEVENTDATA [5] to fetch list (3 entries, opv 2, 0 messages queued)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 43 bytes, CorrId 6, rtt 220.19ms)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyEVENTDATA [7] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [7] returned offset 9785 (9785)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 50 bytes, CorrId 7, rtt 220.22ms)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [7] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [7] start fetching at offset 9785
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyEVENTDATA [9] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyEVENTDATA [9] returned offset 69238 (69238)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [9] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyEVENTDATA [9] start fetching at offset 69238
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyEVENTDATA [7]: fetch decide: updating to version 2 (was 0) at offset 9785 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [7] in state active at offset 9785 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyEVENTDATA [7] to fetch list (4 entries, opv 2, 0 messages queued)
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyEVENTDATA [9]: fetch decide: updating to version 2 (was 0) at offset 69238 (was 0)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyNOTIFICATIONDATA [0] (v2 vs v2)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [9] in state active at offset 69238 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [0] returned offset 0 (0)
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyEVENTDATA [9] to fetch list (5 entries, opv 2, 0 messages queued)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [0] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [0] start fetching at offset 0
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyNOTIFICATIONDATA [0]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [0] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyNOTIFICATIONDATA [0] to fetch list (6 entries, opv 2, 0 messages queued)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 50 bytes, CorrId 8, rtt 220.48ms)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 50 bytes, CorrId 9, rtt 220.50ms)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 50 bytes, CorrId 10, rtt 220.51ms)
+%7|1564074180.544|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received OffsetResponse (v0, 50 bytes, CorrId 11, rtt 220.52ms)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyNOTIFICATIONDATA [2] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [2] returned offset 64 (64)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [2] changed fetch state offset-wait -> active
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [2] start fetching at offset 64
+%7|1564074180.544|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.544|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyNOTIFICATIONDATA [2]: fetch decide: updating to version 2 (was 0) at offset 64 (was 0)
+%7|1564074180.544|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [2] in state active at offset 64 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.544|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyNOTIFICATIONDATA [2] to fetch list (7 entries, opv 2, 0 messages queued)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyNOTIFICATIONDATA [4] (v2 vs v2)
+%7|1564074180.544|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [4] returned offset 0 (0)
+%7|1564074180.544|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [4] changed fetch state offset-wait -> active
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [4] start fetching at offset 0
+%7|1564074180.545|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.545|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyNOTIFICATIONDATA [6] (v2 vs v2)
+%7|1564074180.545|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [6] returned offset 0 (0)
+%7|1564074180.545|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [6] changed fetch state offset-wait -> active
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [6] start fetching at offset 0
+%7|1564074180.545|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyNOTIFICATIONDATA [4]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.545|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [4] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.545|OFFSET|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Offset reply for topic MyNOTIFICATIONDATA [8] (v2 vs v2)
+%7|1564074180.545|OFFSET|rdkafka#consumer-1| [thrd:main]: Offset BEGINNING request for MyNOTIFICATIONDATA [8] returned offset 0 (0)
+%7|1564074180.545|PARTSTATE|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [8] changed fetch state offset-wait -> active
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:main]: Partition MyNOTIFICATIONDATA [8] start fetching at offset 0
+%7|1564074180.545|WAKEUP|rdkafka#consumer-1| [thrd:main]: localnosql1:9092/0: Wake-up
+%7|1564074180.545|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyNOTIFICATIONDATA [4] to fetch list (8 entries, opv 2, 0 messages queued)
+%7|1564074180.545|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyNOTIFICATIONDATA [6]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [6] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.545|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyNOTIFICATIONDATA [6] to fetch list (9 entries, opv 2, 0 messages queued)
+%7|1564074180.545|FETCHDEC|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: Topic MyNOTIFICATIONDATA [8]: fetch decide: updating to version 2 (was 0) at offset 0 (was 0)
+%7|1564074180.545|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [8] in state active at offset 0 (0/100000 msgs, 0/1048576 kb queued, opv 2) is fetchable:
+%7|1564074180.545|FETCHADD|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Added MyNOTIFICATIONDATA [8] to fetch list (10 entries, opv 2, 0 messages queued)
+%7|1564074180.547|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received FetchResponse (v4, 357 bytes, CorrId 13, rtt 105.70ms)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0] MessageSet size 0, error "Success", MaxOffset 53106, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [2] MessageSet size 0, error "Success", MaxOffset 76, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [4] MessageSet size 0, error "Success", MaxOffset 9644, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [6] MessageSet size 0, error "Success", MaxOffset 17608, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [8] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [1] MessageSet size 0, error "Success", MaxOffset 23, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [3] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [5] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [7] MessageSet size 0, error "Success", MaxOffset 19, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [9] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [2] at offset 76 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [4] at offset 9644 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [6] at offset 17608 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [8] at offset 0 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [1] at offset 23 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [3] at offset 0 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [5] at offset 0 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [7] at offset 19 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [9] at offset 0 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [0] at offset 53106 (v2)
+%7|1564074180.547|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch 10/10/10 toppar(s)
+%7|1564074180.547|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent FetchRequest (v4, 272 bytes @ 0, CorrId 14)
+%7|1564074180.650|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received FetchResponse (v4, 59 bytes, CorrId 12, rtt 105.70ms)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [1] MessageSet size 0, error "Success", MaxOffset 240, Ver 2/2
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [1] at offset 240 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [3] at offset 2204 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [5] at offset 0 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [7] at offset 9785 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [9] at offset 69238 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [0] at offset 0 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [2] at offset 64 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [4] at offset 0 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [6] at offset 0 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [8] at offset 0 (v2)
+%7|1564074180.650|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch 10/10/10 toppar(s)
+%7|1564074180.650|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent FetchRequest (v4, 251 bytes @ 0, CorrId 13)
+%7|1564074180.653|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received FetchResponse (v4, 378 bytes, CorrId 14, rtt 105.27ms)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [2] MessageSet size 0, error "Success", MaxOffset 76, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [4] MessageSet size 0, error "Success", MaxOffset 9644, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [6] MessageSet size 0, error "Success", MaxOffset 17608, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [8] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [1] MessageSet size 0, error "Success", MaxOffset 23, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [3] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [5] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [7] MessageSet size 0, error "Success", MaxOffset 19, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [9] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0] MessageSet size 0, error "Success", MaxOffset 53106, Ver 2/2
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [4] at offset 9644 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [6] at offset 17608 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [8] at offset 0 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [1] at offset 23 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [3] at offset 0 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [5] at offset 0 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [7] at offset 19 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [9] at offset 0 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [0] at offset 53106 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [2] at offset 76 (v2)
+%7|1564074180.653|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch 10/10/10 toppar(s)
+%7|1564074180.653|SEND|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Sent FetchRequest (v4, 272 bytes @ 0, CorrId 15)
+%7|1564074180.756|RECV|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Received FetchResponse (v4, 357 bytes, CorrId 13, rtt 106.14ms)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [1] MessageSet size 0, error "Success", MaxOffset 240, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [3] MessageSet size 0, error "Success", MaxOffset 2204, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [5] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [7] MessageSet size 0, error "Success", MaxOffset 9785, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyEVENTDATA [9] MessageSet size 0, error "Success", MaxOffset 69238, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [0] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [2] MessageSet size 0, error "Success", MaxOffset 64, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [4] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [6] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Topic MyNOTIFICATIONDATA [8] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [3] at offset 2204 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [5] at offset 0 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [7] at offset 9785 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [9] at offset 69238 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [0] at offset 0 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [2] at offset 64 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [4] at offset 0 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [6] at offset 0 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyNOTIFICATIONDATA [8] at offset 0 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch topic MyEVENTDATA [1] at offset 240 (v2)
+%7|1564074180.756|FETCH|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Fetch 10/10/10 toppar(s)
+%7|1564074180.756|SEND|rdkafka#consumer-1| [thrd:localnosql1:9092/0]: localnosql1:9092/0: Sent FetchRequest (v4, 272 bytes @ 0, CorrId 14)
+^C%7|1564074180.759|RECV|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Received FetchResponse (v4, 378 bytes, CorrId 15, rtt 106.05ms)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [4] MessageSet size 0, error "Success", MaxOffset 9644, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [6] MessageSet size 0, error "Success", MaxOffset 17608, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [8] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [1] MessageSet size 0, error "Success", MaxOffset 23, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [3] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [5] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [7] MessageSet size 0, error "Success", MaxOffset 19, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyNOTIFICATIONDATA [9] MessageSet size 0, error "Success", MaxOffset 0, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [0] MessageSet size 0, error "Success", MaxOffset 53106, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Topic MyEVENTDATA [2] MessageSet size 0, error "Success", MaxOffset 76, Ver 2/2
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [6] at offset 17608 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [8] at offset 0 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [1] at offset 23 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [3] at offset 0 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [5] at offset 0 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [7] at offset 19 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyNOTIFICATIONDATA [9] at offset 0 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [0] at offset 53106 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [2] at offset 76 (v2)
+%7|1564074180.759|FETCH|rdkafka#consumer-1| [thrd:localnosql2:9092/1]: localnosql2:9092/1: Fetch topic MyEVENTDATA [4] at offset 9644 (v2)
